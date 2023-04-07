@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="style/css" href="style.css">
+    <title>My Form Page</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="Activity4-preview.php" method="post">
+        
+        Name: <input type="text" name="Name" 
+        style= "display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-left: 27px;"/> <br/>
+        Username: <input type="text" name="Username" class="username"
+        style= "display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-left: 1px;"/> <br/>
+        Password: <input type="password" name="Password" class="password"
+        style= "display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-left: 4px;"/><br/>
+        Address: <input type="text" name="Address" class="address"
+        style= "display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-left: 13px;"/> <br/>
+        Country: <select name="Country" class="country"
+        style= "display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-left: 13px;">
+            <option value="none" selected disabled>Please select a country</option>
+            <option value="Turkey" >Turkey</option>
+            <option value="Germany">Germany</option>
+            <option value="USA">USA</option>
+            <option value="Poland">Poland</option>
+            <option value="Russia">Russia</option>
+        </select><br/>
+        ZIP Code:<input type="text" name="ZIP Code" class="zip"
+        style= "display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-left: 6px;"/> <br/>
+        Email: <input type="text" name="Email" class="email"
+        style= "display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+        margin-left: 25px;"/> <br/>
+        Sex: <input type="radio" id="gender" name="gender" value="male" class="male"
+        style= "display: inline-block;
+        
+        margin-bottom: 10px;
+        margin-left: 50px;"/> Male  
+             <input type="radio" id="gender" name="gender" value="female" class="female"/> Female<br/>
+        Language: 
+            <input type="checkbox" name="language[]" value="English" class="eng"> English
+            <input type="checkbox" name="language[]" value="French"> French 
+            <input type="checkbox" name="language[]" value="Germany" style="margin-bottom: 10px;"> Germany <br/>
+        About: <textarea name="About" id="About" class="about"></textarea> <br/>
+        <input type="submit" value="Submit" class="submit" style="margin-top: 10px;">
+        
+    </form>
+</body>
+</html>
