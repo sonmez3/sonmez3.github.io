@@ -6,8 +6,8 @@ let click = 0;
 function Game(){    
     setTimeout(()=>
     { 
-        document.getElementById("button1").style.marginLeft = Math.random()*700+"px";
-        document.getElementById("button1").style.marginTop = Math.random()* 700+"px"; 
+        document.getElementById("button1").style.marginLeft = Math.random()*450+"px";
+        document.getElementById("button1").style.marginTop = Math.random()* 450+"px"; 
 
     if(click === 3){
         alert(`you won level ${level}!!!`);
