@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript game</title>
 
+  
    
 
 </head>
 <body>
+   
+
     <style>
         #button1{
             
@@ -20,38 +23,6 @@
 
     </style>
      <button id="button1" onmouseover="Game();">click!</button>
-
-     <script type="text/javascript">
-        let myTime = 500;
-        let level = 1;
-        let click = 0;
-
-    
-        function Game(){    
-            setTimeout(()=>
-            { 
-                document.getElementById("button1").style.marginLeft = Math.random()*700+"px";
-                document.getElementById("button1").style.marginTop = Math.random()* 700+"px"; 
-
-            if(click === 3){
-                alert("you won level " + level +"!!");
-                level++;
-                click= 0;
-                myTime = 500 -(level - 1 )*100;
-                
-            }
-        }, myTime);
-        
-         
-           
-        }
-        
-        document.getElementById("button1").addEventListener("click", () => {
-            click++;
-            
-        });
-       
-    </script>
-   
+  <script type="text/javascript" src="activity6.js"></script>
 </body>
 </html>
