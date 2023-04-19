@@ -13,7 +13,8 @@ function Game(){
         alert(`you won level ${level}!!!`);
         level++;
         click= 0;
-        myTime = 500 -(level - 1 )*100;
+        myTime = myTime-100;
+       
         
     }
 }, myTime);
