@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Default functionality</title>
+  
+    <link rel="stylesheet" href="/InClassActivities/jquery-ui-1.13.2/jquery-ui.theme.css">
+    <link rel="stylesheet" href="/InClassActivities/jquery-ui-1.13.2/jquery-ui.css">
+    <script src="/InClassActivities/jquery-ui-1.13.2/external/jquery/jquery.js"></script>
+    <script src="/InClassActivities/jquery-ui-1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen:false,
+       buttons: [
+        {
+          text: "X",
+          icon: "ui-icon-heart",
+          click: function() {
+            $( this ).dialog( "close" );
+          }
+        }
+      ],
+      classes:{"ui-dialog": "ui-corner-all"},
+      draggable:false,
+      hide: { effect: "fadeOut", duration: 1000 },
+      show: { effect: "blind", duration: 800 }
+    });
+  } );
+
+  $(document).ready(function(){
+    $("#1").click(function(){
+      $("#dialog").dialog("open");
+    });
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="dialog" title="Basic dialog">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+</div>
+<button id="1" > Click to open dialog</button>
+ 
+ 
+</body>
+</html>
+

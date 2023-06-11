@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Default functionality</title>
+  <link rel="stylesheet" href="/InClassActivities/jquery-ui-1.13.2/jquery-ui.theme.css">
+  <link rel="stylesheet" href="/InClassActivities/jquery-ui-1.13.2/jquery-ui.css">
+  <script src="/InClassActivities/jquery-ui-1.13.2/external/jquery/jquery.js"></script>
+  <script src="/InClassActivities/jquery-ui-1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#slider" ).slider({
+      /*max:100,
+      min:0,
+      step:5,
+      value:25*/
+      //orientation:"vertical"
+     
+      change: function(event,ui) {$('p').html(ui.value);}
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="slider" style="width:20%;margin:10px"></div>
+<p id="value"> </p>
+ 
+</body>
+</html>
